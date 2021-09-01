@@ -1,0 +1,26 @@
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+<br><br>
+<center><h1>ADD PHOTO</h1></center>
+<div class="container">
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+     <div class="form-group">
+    <input type="text" class="form-control" name="name" placeholder="product name"><br>
+     </div>
+     <div class="form-group">
+     <input type="text"  class="form-control" name="desc" placeholder="description"><br>
+     </div>
+     <div class="form-group">
+     <input type="file" class="form-control" name="img" placeholder=" image"><br>
+     </div>
+    <center><input  class="btn btn-success" type="submit" value="ADD"></center>
+</form>
+</div>
+</body>
+</html>
